@@ -44,14 +44,14 @@ class MainActivity : ComponentActivity() {
 fun MyApp(myViewModel: BMIViewModel = viewModel()) {
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(16.dp)) {
         OutlinedTextFieldTemplate(
-            value = myViewModel.weightInput,
-            onChange = {myViewModel.changeWeight(it)},
-            label = stringResource(R.string.weightLabel)
+            value = myViewModel.heightInput,
+            onChange = { myViewModel.changeHeight(it) },
+            label = stringResource(R.string.heightLabel)
         )
         OutlinedTextFieldTemplate(
-            value = myViewModel.heightInput,
-            onChange = {myViewModel.changeHeight(it)},
-            label = stringResource(R.string.heightLabel)
+            value = myViewModel.weightInput,
+            onChange = { myViewModel.changeWeight(it) },
+            label = stringResource(R.string.weightLabel)
         )
 //        OutlinedTextField(
 //            value = "",
