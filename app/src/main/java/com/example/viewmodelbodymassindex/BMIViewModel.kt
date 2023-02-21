@@ -33,6 +33,6 @@ class BMIViewModel : ViewModel() {
         }
 
     private fun calculate(): Float {
-        return if (weight > 0 && height > 0) weight / (height * height) else 0.0f
+        return if (weight > 0 && height > 0) weight / ((height/100) * (height/100)) else 0.0f
     }
 }
